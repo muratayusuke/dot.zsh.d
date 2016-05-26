@@ -8,6 +8,7 @@ export GIT_SSL_NO_VERIFY=true
 
 # aliases
 alias g="git"
+alias gi="git init"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gca="git commit --amend"

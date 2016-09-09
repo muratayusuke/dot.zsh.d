@@ -57,6 +57,7 @@ alias gdt="git difftool"
 alias gmt="git mergetool"
 alias gt="git ex tag"
 alias gpr="hub pull-request"
+alias gbk="git bk"
 
 fpath=($ZSH_EXT_BASE/plugins/git $fpath)
 

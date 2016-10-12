@@ -36,7 +36,7 @@ export PATH=/usr/local/tmux/bin:$PATH
 export MANPATH=/usr/local/tmux/man:`manpath -q`
 
 # less color option
-export LESS='-R'
+export LESS='-g -i -M -R -S -W -x4'
 
 # alias 設定
 case ${OSTYPE} in

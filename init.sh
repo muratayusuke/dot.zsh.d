@@ -9,7 +9,15 @@ for plugin ($ZSH_EXT_BASE/plugins/*) {
   source $ZSH_EXT_BASE/plugins/$plugin_name/$plugin_name.plugin.zsh
 }
 
-/usr/bin/gnome-keyring-daemon --start --components=pkcs11 1>/dev/null
+case ${OSTYPE} in
+  darwin*)
+    # for Mac
+	;;
+  *)
+    # other
+    /usr/bin/gnome-keyring-daemon --start --components=pkcs11 1>/dev/null
+	;;
+esac
 
 autoload -U compinit
 compinit -i

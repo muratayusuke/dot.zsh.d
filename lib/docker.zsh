@@ -8,4 +8,7 @@ alias dcb="docker-compose build"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dce="docker-compose exec"
+alias dm="docker-machine"
+alias dms="docker-machine start"
+alias dmr="docker-machine restart"
 drma() { docker rm $(docker ps -a -q); }

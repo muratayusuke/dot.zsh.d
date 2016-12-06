@@ -1,5 +1,5 @@
 # emacs config
-export EDITOR=/usr/bin/emacsclient
+export EDITOR=emacsclient
 export ALTERNATE_EDITOR='emacs'
 if [ $OSTYPE = "darwin" ]; then
   alias emacs='open /Applications/Emacs.app/Contents/MacOS/Emacs'

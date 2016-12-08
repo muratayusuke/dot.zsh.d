@@ -1,2 +1,3 @@
 export GOPATH=$HOME/.go
-export PATH=$GOPATH/bin:$PATH
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH

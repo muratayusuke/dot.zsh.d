@@ -2712,7 +2712,9 @@ if [[ -n ${ZSH_VERSION-} ]]; then
 		return _ret
 	}
 
-	compdef _git git gitk
+    autoload -Uz compinit
+    compinit
+    compdef _git git gitk
 	return
 elif [[ -n ${BASH_VERSION-} ]]; then
 	if ((${BASH_VERSINFO[0]} < 4)); then

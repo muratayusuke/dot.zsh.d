@@ -99,3 +99,6 @@ esac
 # bin
 export PATH=~/.bin:$PATH
 export PATH=$PATH:./node_modules/.bin
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH

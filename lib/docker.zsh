@@ -11,4 +11,5 @@ alias dce="docker-compose exec"
 alias dm="docker-machine"
 alias dms="docker-machine start"
 alias dmr="docker-machine restart"
+alias ds="docker-sync"
 drma() { docker rm $(docker ps -a -q); }

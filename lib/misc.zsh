@@ -102,3 +102,5 @@ export PATH=$PATH:./node_modules/.bin
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+alias k="kubectl"

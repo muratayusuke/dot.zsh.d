@@ -1,5 +1,9 @@
 export ZSH_EXT_BASE=$HOME/.zsh.d
 
+# [Fix] error] complete:13: command not found: compdef
+autoload -Uz compinit
+compinit
+
 # TIP: Add files you don't want in git to .gitignore
 for config_file ($ZSH_EXT_BASE/lib/*.zsh) source $config_file
 
@@ -18,7 +22,4 @@ case ${OSTYPE} in
     /usr/bin/gnome-keyring-daemon --start --components=pkcs11 1>/dev/null
 	;;
 esac
-
-autoload -U compinit
-compinit -i
 

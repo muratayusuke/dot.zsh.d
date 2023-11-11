@@ -1,3 +1,2 @@
-if [ -f /usr/local/bin/aws_zsh_completer.sh ]; then
-  source /usr/local/bin/aws_zsh_completer.sh
-fi
+autoload bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
